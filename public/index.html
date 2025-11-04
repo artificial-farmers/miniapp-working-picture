@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EMAS-WindVane JSBridge Demo</title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css[css] %>" />
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script src="//g.alicdn.com/code/lib/react/18.2.0/umd/react.development.js"></script> -->
+    <!-- <script src="//g.alicdn.com/code/lib/react-dom/18.2.0/umd/react-dom.development.js"></script> -->
+    <!-- <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script> -->
+    <script src="https://g.alicdn.com/superapp-cloud/js-library-windvane/3.1.3/windvane.js"></script>
+    <% for (var chunk in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[chunk]%>"></script>
+    <% } %>
+  </body>
+</html>
