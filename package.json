@@ -1,6 +1,6 @@
 {
   "name": "create-emas-miniapp",
-  "version": "0.0.10",
+  "version": "2.1.1",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -10,6 +10,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "antd-mobile": "^5.24.0",
+    "axios": "^1.13.2",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
